@@ -1,0 +1,38 @@
+nav{
+    background: black;
+    display:flex;
+    flex-wrap: wrap;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    opacity: 60%;
+    &:hover{
+       opacity: 100%;
+    }
+    .main_menu{
+        display: flex;
+        flex-wrap: wrap;
+        .menu-option{
+            list-style: none;
+            font-size: 24px;
+            margin-left: 10px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .dropdown{
+            display: none;
+        }
+        .abc{
+            &:hover{
+                .dropdown{
+                    display: block;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

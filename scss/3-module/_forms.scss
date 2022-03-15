@@ -1,0 +1,50 @@
+.contact-box{
+    background: #6C7B82;
+    padding: 80px 0;
+    .inner-box{
+        width: 980px;
+        margin: 0 auto;
+        h1{
+            color: white;
+            text-align: center;
+            font-weight: 100;
+            padding-bottom:80px;
+            font-size: 64px;
+        }
+        .contact-cater{
+            p{
+                color: white;
+                font-size: 24px;
+                font-weight: lighter;
+                line-height: 1.2;
+                padding-bottom: 25px;
+                span{
+                    background: black;
+                    color: white;
+                    padding: 5px 10px;
+                }
+            }
+            .cnt-spcl{
+                font-size: 24px;
+                margin: 25px 0;
+                b{
+                    font-size: 28px;
+                }
+            }
+        }
+        form{
+            input{
+                display: block;
+                width: 100%;
+                font:inherit;
+                padding: 22px 10px;
+                margin-bottom: 15px;
+                border: 1px solid white;
+            }
+            button{
+                width: 102%;
+                padding: 22px 10px;
+            }
+        }
+    }
+}

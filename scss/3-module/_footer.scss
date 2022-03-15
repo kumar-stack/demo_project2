@@ -1,0 +1,20 @@
+footer{
+    background: black;
+    color: white;
+    height: 220px;
+    p{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 28px;
+        a{
+            color: white;
+            margin-left: 15px;
+            &:hover{
+                color: green;
+            }
+        }
+    }
+}
