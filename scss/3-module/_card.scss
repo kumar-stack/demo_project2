@@ -52,7 +52,7 @@
                 margin-left: 10px;
                 border-bottom: 1px solid gray;
                 padding-bottom: 25px;
-                opacity: 55%;
+                opacity: 40%;
                 font-size: 24px;
                 margin-bottom: 20px;
             }
@@ -104,10 +104,18 @@
             .weekdays{
                 display:flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
                 p{
                     font-size: 22px;
                     padding: 15px 0;
+                }
+                .friday{
+                    padding-left: 250px;
+                }
+                .saturday{
+                    padding-left: 202px;
+                }
+                .sunday{
+                    padding-left: 226px;
                 }
             }
         }   
