@@ -18,6 +18,18 @@ nav{
             list-style: none;
             font-size: 24px;
             margin-left: 10px;
+            @mdeia(min-width:320px) and (max-width:576.98px){
+
+            }
+            @mdeia(min-width:577px) and (max-width:768.98px){
+                
+            }
+            @mdeia(min-width:769px) and (max-width:992.98px){
+                
+            }
+            @mdeia(min-width:993px) and (max-width:1200.98px){
+                
+            }
             a{
                 color: white;
                 text-decoration: none;

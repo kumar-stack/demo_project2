@@ -2,17 +2,53 @@
     background: black;
     text-align: center;
     padding-bottom: 120px;
+    @mdeia(min-width:320px) and (max-width:576.98px){
+
+    }
+    @mdeia(min-width:577px) and (max-width:768.98px){
+        
+    }
+    @mdeia(min-width:769px) and (max-width:992.98px){
+        
+    }
+    @mdeia(min-width:993px) and (max-width:1200.98px){
+        
+    }
     h1{
         font-size: 64px;
         font-weight: 100;
         padding: 80px 0;
         color: white;
+        @mdeia(min-width:320px) and (max-width:576.98px){
+
+        }
+        @mdeia(min-width:577px) and (max-width:768.98px){
+            
+        }
+        @mdeia(min-width:769px) and (max-width:992.98px){
+            
+        }
+        @mdeia(min-width:993px) and (max-width:1200.98px){
+            
+        }
     }
     .inner-menu{
         width: 980px;
         background: white;
         margin: 0 auto;        
         border: 1px solid gray;
+        @mdeia(min-width:320px) and (max-width:576.98px){
+
+        }
+        @mdeia(min-width:577px) and (max-width:768.98px){
+            
+        }
+        @mdeia(min-width:769px) and (max-width:992.98px){
+            
+        }
+        @mdeia(min-width:993px) and (max-width:1200.98px){
+            
+        }
         .menu-bar{
             display: flex;
             flex-wrap: wrap;
@@ -23,6 +59,18 @@
                 font-size: 36px;
                 color: white;
                 text-decoration: none;
+                @mdeia(min-width:320px) and (max-width:576.98px){
+
+                }
+                @mdeia(min-width:577px) and (max-width:768.98px){
+                    
+                }
+                @mdeia(min-width:769px) and (max-width:992.98px){
+                    
+                }
+                @mdeia(min-width:993px) and (max-width:1200.98px){
+                    
+                }
                 &:hover{
                     background: tomato;
                 }
@@ -39,6 +87,18 @@
                     color:black;
                     font-size: 28px;
                     margin-bottom: 30px;
+                    @mdeia(min-width:320px) and (max-width:576.98px){
+
+                    }
+                    @mdeia(min-width:577px) and (max-width:768.98px){
+                        
+                    }
+                    @mdeia(min-width:769px) and (max-width:992.98px){
+                        
+                    }
+                    @mdeia(min-width:993px) and (max-width:1200.98px){
+                        
+                    }
                 }
                 span{
                     background: #616161;
@@ -55,6 +115,18 @@
                 opacity: 40%;
                 font-size: 24px;
                 margin-bottom: 20px;
+                @mdeia(min-width:320px) and (max-width:576.98px){
+
+                }
+                @mdeia(min-width:577px) and (max-width:768.98px){
+                    
+                }
+                @mdeia(min-width:769px) and (max-width:992.98px){
+                    
+                }
+                @mdeia(min-width:993px) and (max-width:1200.98px){
+                    
+                }
             }
         }
     }
