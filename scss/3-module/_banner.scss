@@ -1,85 +1,99 @@
+@import"../0-variable/variable";
 .banner{
     background: url(/images/banner/1.jpg);
-    height: 550px;
     background-size: cover;
     position: relative;
+    height: 546px;
+    @media(min-width:320px) and (max-width:576.98px){
+        height: 430px;      
+    }
+    @media(min-width:577px) and (max-width:768.98px){
+        height: 430px;
+    }
+    @media(min-width:769px) and (max-width:992.98px){
+        height: 430px;
+    }
+    @media(min-width:993px) and (max-width:1200.98px){
+        height: 430px;
+    }
     .banner-caption{
         position: absolute;
-        top: 140px;
+        top: 100px;
         left: 0;
         right: 0;
-        @mdeia(min-width:320px) and (max-width:576.98px){
+        @media(min-width:320px) and (max-width:576.98px){
 
         }
-        @mdeia(min-width:577px) and (max-width:768.98px){
+        @media(min-width:577px) and (max-width:768.98px){
             
         }
-        @mdeia(min-width:769px) and (max-width:992.98px){
+        @media(min-width:769px) and (max-width:992.98px){
             
         }
-        @mdeia(min-width:993px) and (max-width:1200.98px){
+        @media(min-width:993px) and (max-width:1200.98px){
             
         }
         h1{
-            font-size: 90px;
-            color: white;
+            font-size: $max;
+            color: $white;
             font-weight: lighter;
             text-align: center;
-            @mdeia(min-width:320px) and (max-width:576.98px){
-
+            @media(min-width:320px) and (max-width:576.98px){
+                font-size: $main;
+                font-weight: bolder;
             }
-            @mdeia(min-width:577px) and (max-width:768.98px){
-                
+            @media(min-width:577px) and (max-width:768.98px){
+                font-size: $main;
+                font-weight: bolder;
             }
-            @mdeia(min-width:769px) and (max-width:992.98px){
-                
+            @media(min-width:769px) and (max-width:992.98px){
+                font-size: $main;
+                font-weight: bolder;
             }
-            @mdeia(min-width:993px) and (max-width:1200.98px){
-                
+            @media(min-width:993px) and (max-width:1200.98px){
+                font-size: $max;
+                font-weight: bolder;
             }
         }
         .banner-txt{
             text-align: center;
             width: 100%;
             h2{
-                background: black;
-                color: white;
+                background: $black;
+                color: $white;
                 font-weight: 100;
                 display: inline-block;
-                padding: 10px 15px; 
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
+                padding: 5px 10px; 
+                font-size: $small;
+                &:hover{
+                    background: $gray;
+                    cursor: pointer;
+                    color: $black;
                 }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
-                }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
-                }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
-                }  
             }
         }
     }
     h3{
-        background: black;
-        color: white;
+        background: $black;
+        color: $white;
         display: inline-block;
-        padding: 10px 15px;
+        padding: 5px 10px;
         position: absolute;
         bottom: 10px;
         left: 10px;
-        @mdeia(min-width:320px) and (max-width:576.98px){
-
+        font-size: $default;
+        margin-top:30px;
+        @media(min-width:320px) and (max-width:576.98px){
+            font-size: 18px;
+            padding: 10px
         }
-        @mdeia(min-width:577px) and (max-width:768.98px){
+        @media(min-width:577px) and (max-width:768.98px){
             
         }
-        @mdeia(min-width:769px) and (max-width:992.98px){
+        @media(min-width:769px) and (max-width:992.98px){
             
         }
-        @mdeia(min-width:993px) and (max-width:1200.98px){
+        @media(min-width:993px) and (max-width:1200.98px){
             
         }
     }

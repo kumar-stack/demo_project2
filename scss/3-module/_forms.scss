@@ -1,121 +1,171 @@
+@import"../0-variable/variable";
 .contact-box{
-    background: #6C7B82;
+    background: $grey;
     padding: 80px 0;
     .inner-box{
         width: 980px;
         margin: 0 auto;
-        @mdeia(min-width:320px) and (max-width:576.98px){
-
+        @media(min-width:320px) and (max-width:576.98px){
+            width: 100%;
         }
-        @mdeia(min-width:577px) and (max-width:768.98px){
-            
+        @media(min-width:577px) and (max-width:768.98px){
+            width: 100%;
         }
-        @mdeia(min-width:769px) and (max-width:992.98px){
-            
+        @media(min-width:769px) and (max-width:992.98px){
+            width: 100%;
         }
-        @mdeia(min-width:993px) and (max-width:1200.98px){
-            
+        @media(min-width:993px) and (max-width:1200.98px){
+            width: 100%;
         }
         h1{
-            color: white;
+            color: $white;
             text-align: center;
             font-weight: 100;
             padding-bottom:80px;
-            font-size: 64px;
-            @mdeia(min-width:320px) and (max-width:576.98px){
-
+            font-size: $main;
+            @media(min-width:320px) and (max-width:576.98px){
+                font-size: $main;
             }
-            @mdeia(min-width:577px) and (max-width:768.98px){
-                
+            @media(min-width:577px) and (max-width:768.98px){
+                font-size: $main;
             }
-            @mdeia(min-width:769px) and (max-width:992.98px){
-                
+            @media(min-width:769px) and (max-width:992.98px){
+                font-size: $main;
             }
-            @mdeia(min-width:993px) and (max-width:1200.98px){
-                
+            @media(min-width:993px) and (max-width:1200.98px){
+                font-size: $main;
             }
         }
         .contact-cater{
             p{
-                color: white;
-                font-size: 24px;
+                color: $white;
+                font-size: $default;
                 font-weight: lighter;
-                line-height: 1.2;
+                line-height: 1.5;
                 padding-bottom: 25px;
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
+                @media(min-width:320px) and (max-width:576.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
+                @media(min-width:577px) and (max-width:768.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
+                @media(min-width:769px) and (max-width:992.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
+                @media(min-width:993px) and (max-width:1200.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
                 span{
-                    background: black;
-                    color: white;
+                    background: $black;
+                    color: $white;
                     padding: 5px 10px;
                 }
             }
             .cnt-spcl{
-                font-size: 24px;
+                font-size: $default;
                 margin: 25px 0;
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
+                @media(min-width:320px) and (max-width:576.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
+                @media(min-width:577px) and (max-width:768.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
+                @media(min-width:769px) and (max-width:992.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
+                @media(min-width:993px) and (max-width:1200.98px){
+                    font-size: $default;
+                    width: 90%;
+                    margin: 0 auto;
                 }
                 b{
-                    font-size: 28px;
+                    font-size: $small;
+                    @media(min-width:320px) and (max-width:576.98px){
+                        font-size: $small
+                    }
+                    @media(min-width:577px) and (max-width:768.98px){
+                        font-size: $small
+                    }
+                    @media(min-width:769px) and (max-width:992.98px){
+                        font-size: $small
+                    }
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        font-size: $small
+                    }
                 }
             }
         }
-        form{
-            input{
-                display: block;
+        
+    }
+    form{
+        width: 980px;
+        margin: auto;
+        @media(min-width:320px) and (max-width:576.98px){
+            width: 90%;
+        }
+        @media(min-width:577px) and (max-width:768.98px){
+            width: 90%;
+        }
+        @media(min-width:769px) and (max-width:992.98px){
+            width: 90%;
+        }
+        @media(min-width:993px) and (max-width:1200.98px){
+            width: 90%;    
+        }
+        input{
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: $default;
+            margin-bottom: 15px;
+            border: 1px solid $white;
+            @media(min-width:320px) and (max-width:576.98px){
                 width: 100%;
-                font:inherit;
-                padding: 22px 10px;
-                margin-bottom: 15px;
-                border: 1px solid white;
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
-                }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
-                }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
-                }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
-                }
+               
             }
-            button{
-                width: 102%;
-                padding: 22px 10px;
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
-                }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
-                }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
-                }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
-                }
+            @media(min-width:577px) and (max-width:768.98px){
+                width: 100%;
+                
+            }
+            @media(min-width:769px) and (max-width:992.98px){
+                width: 100%;
+               
+            }
+            @media(min-width:993px) and (max-width:1200.98px){
+                width: 100%;    
+                
+            }
+        }
+        button{
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: $default;
+            @media(min-width:320px) and (max-width:576.98px){
+                width: 100%;
+            }
+            @media(min-width:577px) and (max-width:768.98px){
+                width: 100%;
+            }
+            @media(min-width:769px) and (max-width:992.98px){
+                width: 100%;
+            }
+            @media(min-width:993px) and (max-width:1200.98px){
+                width: 100%;    
             }
         }
     }

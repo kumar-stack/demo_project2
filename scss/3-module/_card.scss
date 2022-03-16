@@ -1,131 +1,153 @@
+@import"../0-variable/variable";
 .menu-box{
-    background: black;
+    background: $black;
     text-align: center;
     padding-bottom: 120px;
-    @mdeia(min-width:320px) and (max-width:576.98px){
-
-    }
-    @mdeia(min-width:577px) and (max-width:768.98px){
-        
-    }
-    @mdeia(min-width:769px) and (max-width:992.98px){
-        
-    }
-    @mdeia(min-width:993px) and (max-width:1200.98px){
-        
-    }
     h1{
-        font-size: 64px;
+        font-size: $main;
         font-weight: 100;
         padding: 80px 0;
-        color: white;
-        @mdeia(min-width:320px) and (max-width:576.98px){
-
+        color: $white;
+        @media(min-width:320px) and (max-width:576.98px){
+            font-size: $sub;
         }
-        @mdeia(min-width:577px) and (max-width:768.98px){
-            
+        @media(min-width:577px) and (max-width:768.98px){
+            font-size: $sub;
         }
-        @mdeia(min-width:769px) and (max-width:992.98px){
-            
+        @media(min-width:769px) and (max-width:992.98px){
+            font-size: $sub;
         }
-        @mdeia(min-width:993px) and (max-width:1200.98px){
-            
+        @media(min-width:993px) and (max-width:1200.98px){
+            font-size: $main;
         }
     }
     .inner-menu{
         width: 980px;
-        background: white;
+        background: $white;
         margin: 0 auto;        
-        border: 1px solid gray;
-        @mdeia(min-width:320px) and (max-width:576.98px){
-
+        border: 1px solid $gray;
+        @media(min-width:320px) and (max-width:576.98px){
+            width:90%;
+            margin: 0 auto; 
         }
-        @mdeia(min-width:577px) and (max-width:768.98px){
-            
+        @media(min-width:577px) and (max-width:768.98px){
+            width:90%;
+            margin: 0 auto; 
         }
-        @mdeia(min-width:769px) and (max-width:992.98px){
-            
+        @media(min-width:769px) and (max-width:992.98px){
+            width:80%;
+            margin: 0 auto; 
         }
-        @mdeia(min-width:993px) and (max-width:1200.98px){
-            
+        @media(min-width:993px) and (max-width:1200.98px){
+            width:80%;
+            margin: 0 auto; 
         }
         .menu-bar{
             display: flex;
             flex-wrap: wrap;
-            background:black;
+            background:$black;
             a{
                 width:33.333%;
                 padding: 10px 0;
-                font-size: 36px;
-                color: white;
+                font-size: $small;
+                color: $white;
                 text-decoration: none;
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
+                @media(min-width:320px) and (max-width:576.98px){
+                    font-size: $small;
                 }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
+                @media(min-width:577px) and (max-width:768.98px){
+                    font-size: $small;
                 }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
+                @media(min-width:769px) and (max-width:992.98px){
+                    font-size: $small;
                 }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
+                @media(min-width:993px) and (max-width:1200.98px){
+                    font-size: $small;
                 }
                 &:hover{
-                    background: tomato;
+                    background: $tomato;
                 }
             }
         }
         
         .Toppings{
+            padding-top: 50px;
             .margerita{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 10px;
                 h2{
-                    color:black;
-                    font-size: 28px;
+                    color:$black;
+                    font-size: $small;
                     margin-bottom: 30px;
-                    @mdeia(min-width:320px) and (max-width:576.98px){
-
+                    @media(min-width:320px) and (max-width:576.98px){
+                        font-size: $smaller;
                     }
-                    @mdeia(min-width:577px) and (max-width:768.98px){
-                        
+                    @media(min-width:577px) and (max-width:768.98px){
+                        font-size: $smaller;
                     }
-                    @mdeia(min-width:769px) and (max-width:992.98px){
-                        
+                    @media(min-width:769px) and (max-width:992.98px){
+                        font-size: $smaller;
                     }
-                    @mdeia(min-width:993px) and (max-width:1200.98px){
-                        
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        font-size: $smaller;
                     }
                 }
                 span{
-                    background: #616161;
-                    color: white;
+                    background: $span;
+                    color: $white;
                     padding: 10px;
-                    height: 20px;
+                    height: 46px;
+                    font-size: $small;
+                    border-radius: 4px;
+                    @media(min-width:320px) and (max-width:576.98px){
+                        padding: 5px;
+                        font-size: $small;
+                    }
+                    @media(min-width:577px) and (max-width:768.98px){
+                        padding: 5px;
+                        font-size: $small;
+                    }
+                    @media(min-width:769px) and (max-width:992.98px){
+                        padding: 5px;
+                        font-size: $small;
+                    }
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        padding: 10px;
+                         font-size: $small;
+                    }
+                }
+                .chilli{
+                    background: $tomato;
+                    color: $white;
+                    padding: 10px;
+                    
+                }
+                .new{
+                    background: $gray;
+                    color: $black;
                 }
             }
             p{
                 text-align: left;
                 margin-left: 10px;
-                border-bottom: 1px solid gray;
+                border-bottom: 1px solid $gray;
                 padding-bottom: 25px;
-                opacity: 40%;
-                font-size: 24px;
-                margin-bottom: 20px;
-                @mdeia(min-width:320px) and (max-width:576.98px){
-
+                opacity: 70%;
+                font-size: $small;
+                margin-right: 10px;
+                @media(min-width:320px) and (max-width:576.98px){
+                    font-size: $default;
                 }
-                @mdeia(min-width:577px) and (max-width:768.98px){
-                    
+                @media(min-width:577px) and (max-width:768.98px){
+                    font-size: $default;
                 }
-                @mdeia(min-width:769px) and (max-width:992.98px){
-                    
+                @media(min-width:769px) and (max-width:992.98px){
+                    font-size: $default;
                 }
-                @mdeia(min-width:993px) and (max-width:1200.98px){
-                    
+                @media(min-width:993px) and (max-width:1200.98px){
+                    font-size: $default;
                 }
             }
         }
@@ -133,34 +155,86 @@
 }
 
 .about-box{
-    background: #8A5D5A;
+    background: $brown;
     .inner-about{
         width: 980px;
         margin: 0 auto;
+        @media(min-width:320px) and (max-width:576.98px){
+            width: 100%;
+        }
+        @media(min-width:577px) and (max-width:768.98px){
+            width: 100%;
+        }
+        @media(min-width:769px) and (max-width:992.98px){
+            width: 100%;
+        }
+        @media(min-width:993px) and (max-width:1200.98px){
+            width: 100%;
+        }
         h1{
-            font-size: 64px;
-            color: white;
+            font-size: $main;
+            color: $white;
             font-weight: 100;
             text-align: center;
             padding:70px 0;
-
+            @media(min-width:320px) and (max-width:576.98px){
+                font-size: $main;
+            }
+            @media(min-width:577px) and (max-width:768.98px){
+                font-size: $main;
+            }
+            @media(min-width:769px) and (max-width:992.98px){
+                font-size: $main;
+            }
+            @media(min-width:993px) and (max-width:1200.98px){
+                font-size: $main;
+            }
         }
         p{
-            font-size:24px;
-            color: white;
+            font-size:$default;
+            color: $white;
             padding: 20px 0;
+            @media(min-width:320px) and (max-width:576.98px){
+                font-size:$default;
+                padding: 15px 10px;
+            }
+            @media(min-width:577px) and (max-width:768.98px){
+                font-size:$default;
+                padding: 15px 10px;
+            }
+            @media(min-width:769px) and (max-width:992.98px){
+                font-size:$default;
+                padding: 15px 10px;
+            }
+            @media(min-width:993px) and (max-width:1200.98px){
+                font-size:$default;
+                padding: 15px 10px;
+            }
         }
         .about-chef{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            .italiano{
-
-            }            
+            justify-content: space-between;        
             img{
                 width: 150px;
                 border-radius: 50%;
                 margin: 25px 0;
+                @media(min-width:320px) and (max-width:576.98px){
+                    width: 80px;
+                    margin: 25px 10px;
+                }
+                @media(min-width:577px) and (max-width:768.98px){
+                    width: 90px;
+                    margin: 25px 10px;
+                }
+                @media(min-width:769px) and (max-width:992.98px){
+                    width: 100px;
+                    margin: 25px 10px;
+                }
+                @media(min-width:993px) and (max-width:1200.98px){
+                    width: 120px;
+                    margin: 25px 10px;
+                }
             }
         }
         img{
@@ -168,26 +242,107 @@
             margin: 20px 0;
         } 
         .timing{
-            margin-bottom: 15px;
+            margin: 30px auto;
             h2{
-                color: white;
-                font-size:28px;
+                color: $white;
+                font-size:$small;
+                margin-bottom: 20px;
+                @media(min-width:320px) and (max-width:576.98px){
+                    font-size:$small;
+                    margin-bottom: 15px;
+                    padding-left: 5px;
+                }
+                @media(min-width:577px) and (max-width:768.98px){
+                    font-size:$small;
+                    margin-bottom: 15px;
+                    padding-left: 5px;
+                }
+                @media(min-width:769px) and (max-width:992.98px){
+                    font-size:$small;
+                    margin-bottom: 15px;
+                    padding-left: 5px;
+                }
+                @media(min-width:993px) and (max-width:1200.98px){
+                    font-size:$small;
+                    margin-bottom: 15px;
+                    padding-left: 5px;
+                }
             }
             .weekdays{
                 display:flex;
                 flex-wrap: wrap;
                 p{
-                    font-size: 22px;
-                    padding: 15px 0;
+                    font-size: $default;
+                    padding: 5px 0;
+                    @media(min-width:320px) and (max-width:576.98px){
+                        font-size: $default;
+                        padding-left: 5px;
+                        width: 130px;
+                    }
+                    @media(min-width:577px) and (max-width:768.98px){
+                        font-size: $default;
+                        padding-left: 5px;
+                        width: 130px;
+                    }
+                    @media(min-width:769px) and (max-width:992.98px){
+                        font-size: $default;
+                        padding-left: 5px;
+                        width: 130px;
+                    }
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        font-size: $default;
+                        padding-left: 5px;
+                        width: 130px;
+                    }
                 }
                 .friday{
-                    padding-left: 250px;
+                    padding-left: 350px;
+                    @media(min-width:320px) and (max-width:576.98px){
+                        font-size: $default;
+                        padding-left: 50px;
+                    }
+                    @media(min-width:577px) and (max-width:768.98px){
+                        font-size:$default;
+                        padding-left: 100px;
+                    }
+                    @media(min-width:769px) and (max-width:992.98px){
+                        font-size:$default;
+                        padding-left: 200px;
+                    }
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        font-size:$default;
+                        padding-left: 300px;
+                    }
                 }
                 .saturday{
-                    padding-left: 202px;
+                    padding-left: 317px;
+                    @media(min-width:320px) and (max-width:576.98px){
+                        padding-left: 50px;
+                    }
+                    @media(min-width:577px) and (max-width:768.98px){
+                        padding-left: 100px;
+                    }
+                    @media(min-width:769px) and (max-width:992.98px){
+                        padding-left: 200px;
+                    }
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        padding-left: 300px;
+                    }
                 }
                 .sunday{
-                    padding-left: 226px;
+                    padding-left: 326px;
+                    @media(min-width:320px) and (max-width:576.98px){
+                        padding-left: 50px;
+                    }
+                    @media(min-width:577px) and (max-width:768.98px){
+                        padding-left: 100px;
+                    }
+                    @media(min-width:769px) and (max-width:992.98px){
+                        padding-left: 200px;
+                    }
+                    @media(min-width:993px) and (max-width:1200.98px){
+                        padding-left: 300px;
+                    }
                 }
             }
         }   
