@@ -8,31 +8,23 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="./css/2-layouts/home.css" >
-    <link rel="stylesheet" href="./css/2-layouts/all.min.css">
+    <link rel="stylesheet" href="css/2-layouts/home.css" >
+    <link rel="stylesheet" href="css/2-layouts/all.min.css">
 
 </head>
 <body>
   <nav>
     <ul class="main_menu">
-      <li class="menu-option" ><a href="#">Home</a></li>
-      <li class="menu-option"><a href="#">Contact</a></li>
-      <li class="menu-option"><a href="#">About</a></li>
-      <li class="menu-option"><a href="#">Contact</a></li>
-      <li class="abc">
-        <a  href="#">like</a>
-        <ul class="dropdown">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-       </ul>
-    </li>
+      <li class="menu-option" ><a href="#tap_home">Home</a></li>
+      <li class="menu-option hide"><a href="#tap_menu">Menu</a></li>
+      <li class="menu-option hide"><a href="#tap_about">About</a></li>
+      <li class="menu-option hide"><a href="#tap_contact">Contact</a></li>
     </ul>
+   <a href="#"> <i class="fa-solid fa-bars"></i> </a>
   </nav>
-  <div class="banner">  
+  <div class="banner" id="tap_home">  
     <div class="banner-caption">
       <h1>THIN <br> CRUST PIZZA</h1>
      <div class="banner-txt">
@@ -41,7 +33,7 @@
     </div>  
     <h3>Open from 10am to 12pm</h3> 
   </div>
-  <div class="menu-box">
+  <div class="menu-box" id="tap_menu"> 
     <h1>THE MENU</h1>
     <div class="inner-menu">
       <div class="menu-bar">
@@ -49,51 +41,53 @@
         <a href="#">SALAD</a>
         <a href="#">STARTER</a>
       </div>
-      <div class="Toppings">
-        <div class="margerita">
-          <h2>Margherita</h2>
-          <span> $12.50</span>
+      <div class="pizza-menu">
+        <div class="Toppings">
+          <div class="margerita">
+            <h2>Margherita</h2>
+            <span> $12.50</span>
+          </div>
+          <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
         </div>
-        <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
-      </div>
-      <div class="Toppings">
-        <div class="margerita">
-          <h2>Formaggio</h2>
-          <span> $15.50</span>
+        <div class="Toppings">
+          <div class="margerita">
+            <h2>Formaggio</h2>
+            <span> $15.50</span>
+          </div>
+          <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
         </div>
-        <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
-      </div>
-      <div class="Toppings">
-        <div class="margerita">
-          <h2>Chicken</h2>
-          <span>  $17.00</span>
+        <div class="Toppings">
+          <div class="margerita">
+            <h2>Chicken</h2>
+            <span>  $17.00</span>
+          </div>
+          <p>Fresh tomatoes, mozzarella, chicken, onions</p>
         </div>
-        <p>Fresh tomatoes, mozzarella, chicken, onions</p>
-      </div>
-      <div class="Toppings">
-        <div class="margerita">
-          <h2>Pineapple'o'clock</h2>
-          <span>  $16.50</span>
+        <div class="Toppings">
+          <div class="margerita">
+            <h2>Pineapple'o'clock</h2>
+            <span>  $16.50</span>
+          </div>
+          <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
         </div>
-        <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
-      </div>
-      <div class="Toppings">
-        <div class="margerita">
-          <h2>Meat Town Hot!</h2>
-          <span> $20.00</span>
+        <div class="Toppings">
+          <div class="margerita">
+            <h2>Meat Town <span class="chilli" >Hot!</span></h2>
+            <span> $20.00</span>
+          </div>
+          <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
         </div>
-        <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
-      </div>
-      <div class="Toppings">
-        <div class="margerita">
-          <h2>Parma New</h2>
-          <span>$21.50</span>
+        <div class="Toppings">
+          <div class="margerita">
+            <h2>Parma <span class="new" >New</span></h2>
+            <span>$21.50</span>
+          </div>
+          <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
         </div>
-        <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
       </div>
     </div>
   </div>
-  <div class="about-box">
+  <div class="about-box" id="tap_about">
     <div class="inner-about">
       <h1>About</h1>
       <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -123,11 +117,10 @@
         </div>
       </div>
     </div>
-    <div class="banner3">
-      <img src="./images/banner/3.jpg" alt="">
+    <div class="banner3" id="tap_contact">
+      <img src="./images/banner/3.jpg" alt="banner3">
     </div>
   </div>
-
   <div class="contact-box">
     <div class="inner-box">
       <h1>Contact</h1>
@@ -136,14 +129,14 @@
         <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
         <p class="cnt-spcl"> <b>Reserve</b> a table, ask for today's special or just send us a message:</p>
       </div>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="number" placeholder="HOW MANY PEOPLE">
-        <input type="date" placeholder="date">
-        <input type="text" placeholder="MESSAGE/SPECIAL REQUIREMENTS">
-        <button type="submit">SEND MESSAGE</button>
-      </form>
     </div>
+    <form>
+      <input type="text" placeholder="Name"> <br>
+      <input type="number" placeholder="HOW MANY PEOPLE"> <br>
+      <input type="date" placeholder="date"> <br>
+      <input type="text" placeholder="MESSAGE/SPECIAL REQUIREMENTS"> <br>
+      <button type="submit">SEND MESSAGE</button>
+    </form>
   </div>
   <footer>
     <p>POWERED BY <a href="#">me</a> </p>

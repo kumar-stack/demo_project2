@@ -1,7 +1,9 @@
+@import"../0-variable/variable";
 nav{
-    background: black;
+    background: $black;
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     height: 60px;
     align-items: center;
     position: fixed;
@@ -14,37 +16,78 @@ nav{
     .main_menu{
         display: flex;
         flex-wrap: wrap;
+        margin-left: 10px;
         .menu-option{
             list-style: none;
-            font-size: 24px;
-            margin-left: 10px;
-            @mdeia(min-width:320px) and (max-width:576.98px){
-
+            font-size: $default;      
+            @media(min-width:320px) and (max-width:576.98px){
+                font-size: $default; 
             }
-            @mdeia(min-width:577px) and (max-width:768.98px){
-                
+            @media(min-width:577px) and (max-width:768.98px){
+                font-size: $default; 
             }
-            @mdeia(min-width:769px) and (max-width:992.98px){
-                
+            @media(min-width:769px) and (max-width:992.98px){
+                font-size: $default; 
             }
-            @mdeia(min-width:993px) and (max-width:1200.98px){
-                
+            @media(min-width:993px) and (max-width:1200.98px){
+                font-size: $default; 
             }
             a{
-                color: white;
+                color: $white;
                 text-decoration: none;
-            }
-        }
-        .dropdown{
-            display: none;
-        }
-        .abc{
-            &:hover{
-                .dropdown{
-                    display: block;
-                    position: absolute;
+                padding: 10px;
+                &:hover{
+                    background:$gains;
+                    color: $black;
+                    padding: 10px;
                 }
             }
+        }
+        .hide{
+            @media(min-width:320px) and (max-width:576.98px){
+                display: none;
+            }
+            @media(min-width:577px) and (max-width:768.98px){
+                display: none;
+            }
+            @media(min-width:769px) and (max-width:992.98px){
+                display: none;
+            }
+            @media(min-width:993px) and (max-width:1200.98px){
+                display: block;
+            }
+        }
+    }
+    .fa-bars{
+        color: $white;
+        font-size: $default;
+        line-height: 1.2;
+        margin-right: 20px;
+        padding: 10px;
+        display: none;       
+        @media(min-width:320px) and (max-width:576.98px){
+            display: block;
+            &:hover{
+                background: $gains;
+                color: $black;
+            }
+        }    
+        @media(min-width:577px) and (max-width:768.98px){
+            display: block;
+            &:hover{
+                background: $gains;
+                color: $black;
+            }
+        }
+        @media(min-width:769px) and (max-width:992.98px){
+            display: block;
+            &:hover{
+                background: $gains;
+                color: $black;
+            }
+        }
+        @media(min-width:993px) and (max-width:1200.98px){
+        
         }
     }
 }

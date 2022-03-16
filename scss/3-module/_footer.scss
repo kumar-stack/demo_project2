@@ -1,18 +1,27 @@
+@import"../0-variable/variable";
 footer{
-    background: black;
-    color: white;
+    background:$black;
+    color: $white;
     height: 220px;
-    @mdeia(min-width:320px) and (max-width:576.98px){
-
+    @media(min-width:320px) and (max-width:576.98px){
+        background:$black;
+        color: $white;
+        height: 220px;
     }
-    @mdeia(min-width:577px) and (max-width:768.98px){
-        
+    @media(min-width:577px) and (max-width:768.98px){
+        background:$black;
+        color: $white;
+        height: 220px;
     }
-    @mdeia(min-width:769px) and (max-width:992.98px){
-        
+    @media(min-width:769px) and (max-width:992.98px){
+        background:$black;
+        color: $white;
+        height: 220px;
     }
-    @mdeia(min-width:993px) and (max-width:1200.98px){
-        
+    @media(min-width:993px) and (max-width:1200.98px){
+        background:$black;
+        color: $white;
+        height: 220px;
     }
     p{
         display: flex;
@@ -20,32 +29,32 @@ footer{
         justify-content: center;
         align-items: center;
         height: 100%;
-        font-size: 28px;
-        @mdeia(min-width:320px) and (max-width:576.98px){
-
+        font-size: $small;
+        @media(min-width:320px) and (max-width:576.98px){
+            font-size: $small;
         }
-        @mdeia(min-width:577px) and (max-width:768.98px){
-            
+        @media(min-width:577px) and (max-width:768.98px){
+            font-size: $small;
         }
-        @mdeia(min-width:769px) and (max-width:992.98px){
-            
+        @media(min-width:769px) and (max-width:992.98px){
+            font-size: $small;
         }
-        @mdeia(min-width:993px) and (max-width:1200.98px){
-            
+        @media(min-width:993px) and (max-width:1200.98px){
+            font-size: $small;
         }
         a{
-            color: white;
+            color: $white;
             margin-left: 15px;
-            @mdeia(min-width:320px) and (max-width:576.98px){
+            @media(min-width:320px) and (max-width:576.98px){
 
             }
-            @mdeia(min-width:577px) and (max-width:768.98px){
+            @media(min-width:577px) and (max-width:768.98px){
                 
             }
-            @mdeia(min-width:769px) and (max-width:992.98px){
+            @media(min-width:769px) and (max-width:992.98px){
                 
             }
-            @mdeia(min-width:993px) and (max-width:1200.98px){
+            @media(min-width:993px) and (max-width:1200.98px){
                 
             }
             &:hover{
