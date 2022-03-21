@@ -1,6 +1,6 @@
 @import"../0-variable/variable";
 .banner{
-    background: url(/images/banner/1.jpg);
+    background: url(../../images/banner/1.jpg);
     background-size: cover;
     position: relative;
     height: 546px;
@@ -22,16 +22,28 @@
         left: 0;
         right: 0;
         @media(min-width:320px) and (max-width:576.98px){
-
+            position: absolute;
+            top: 140px;
+            left: 0;
+            right: 0;
         }
         @media(min-width:577px) and (max-width:768.98px){
-            
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
         }
         @media(min-width:769px) and (max-width:992.98px){
-            
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
         }
         @media(min-width:993px) and (max-width:1200.98px){
-            
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
         }
         h1{
             font-size: $max;
@@ -39,7 +51,7 @@
             font-weight: lighter;
             text-align: center;
             @media(min-width:320px) and (max-width:576.98px){
-                font-size: $main;
+                font-size: $sub;
                 font-weight: bolder;
             }
             @media(min-width:577px) and (max-width:768.98px){
